@@ -1,16 +1,16 @@
-modelo,marca,nombre,modelo_carro,año_carro,precio,existencias
+modelo,marca,placa,color,aÃ±o,kilometraje,rentado,motor,precio_renta,ced_cliente,fecha_de_entrega
 Hella,Brembo,Filtros de aire,Accord,2020,277.97,86
-Denso,Bosch,Batería,X5,2022,485.46,120
+Denso,Bosch,Baterï¿½a,X5,2022,485.46,120
 NGK,Brembo,Limpiaparabrisas,A4,2021,490.94,195
 Pioneer,Hella,Discos de freno,Civic,2019,349.2,170
-Pioneer,Brembo,Bujías,Corolla,2022,9.06,14
+Pioneer,Brembo,Bujï¿½as,Corolla,2022,9.06,14
 Bosch,NGK,Discos de freno,A4,2023,428.25,9
 Denso,Hella,Filtros de aire,Camry,2021,382.08,173
-Mann,Sachs,Batería,Mustang,2023,335.72,70
+Mann,Sachs,Baterï¿½a,Mustang,2023,335.72,70
 Mann,Brembo,Amortiguadores,Mustang,2023,43.56,132
 Denso,Denso,Amortiguadores,Corolla,2021,283.44,115
 Sachs,Hella,Altavoces,Accord,2020,400.57,133
-Pioneer,Monroe,Batería,Model S,2018,172.95,178
+Pioneer,Monroe,Baterï¿½a,Model S,2018,172.95,178
 NGK,Valeo,Amortiguadores,A4,2020,242.4,190
 Monroe,Hella,Altavoces,Civic,2018,25.56,169
 Pioneer,Monroe,Altavoces,Accord,2019,421.1,23
@@ -26,15 +26,15 @@ Sachs,Brembo,Filtros de aceite,Model S,2021,356.26,75
 Bosch,Denso,Filtros de aire,Model S,2023,198.32,19
 Pioneer,Mann,Faros,X5,2018,441.21,131
 NGK,Denso,Altavoces,Model S,2021,21.57,37
-Monroe,Monroe,Batería,Mustang,2021,18.84,183
+Monroe,Monroe,Baterï¿½a,Mustang,2021,18.84,183
 Bosch,Mann,Limpiaparabrisas,Accord,2022,384.63,55
 Denso,NGK,Filtros de aire,Mustang,2022,151.68,113
 Monroe,Hella,Faros,X5,2022,371.38,81
 Sachs,Monroe,Filtros de aceite,Model 3,2019,58.98,110
 NGK,Denso,Faros,X5,2018,394.27,75
-Pioneer,Sachs,Amortiguadores,A4,2018,190.0,149
+Pioneer,Sachs,Amortiguadores,A4,2018,190,149
 Valeo,Pioneer,Altavoces,A4,2022,265.66,162
-Bosch,Brembo,Bujías,Corolla,2019,465.76,42
+Bosch,Brembo,Bujï¿½as,Corolla,2019,465.76,42
 Valeo,Hella,Amortiguadores,Corolla,2019,160.3,102
 Brembo,NGK,Filtros de aceite,Model 3,2022,448.26,89
 Mann,Bosch,Altavoces,Accord,2021,394.19,180
@@ -43,15 +43,15 @@ Valeo,Bosch,Amortiguadores,Corolla,2019,25.89,152
 NGK,Mann,Discos de freno,A4,2018,225.09,184
 Denso,Mann,Limpiaparabrisas,X5,2019,373.11,18
 NGK,Hella,Amortiguadores,Corolla,2020,56.04,105
-Hella,Valeo,Amortiguadores,Model 3,2020,25.0,188
-Valeo,Pioneer,Batería,A4,2018,303.94,37
-Mann,Sachs,Batería,X5,2023,71.49,148
+Hella,Valeo,Amortiguadores,Model 3,2020,25,188
+Valeo,Pioneer,Baterï¿½a,A4,2018,303.94,37
+Mann,Sachs,Baterï¿½a,X5,2023,71.49,148
 Sachs,NGK,Filtros de aire,A4,2020,472.67,43
 Valeo,Brembo,Limpiaparabrisas,Camry,2023,270.72,167
 NGK,Brembo,Filtros de aceite,Model 3,2022,429.29,5
-Sachs,Brembo,Bujías,Corolla,2023,157.53,99
+Sachs,Brembo,Bujï¿½as,Corolla,2023,157.53,99
 Monroe,Brembo,Altavoces,Accord,2018,303.66,95
-Denso,NGK,Bujías,Camry,2020,413.45,63
+Denso,NGK,Bujï¿½as,Camry,2020,413.45,63
 Monroe,Brembo,Faros,Civic,2022,296.36,62
 Bosch,Sachs,Discos de freno,Corolla,2021,29.79,148
 Hella,Sachs,Limpiaparabrisas,Camry,2021,8.52,130
@@ -59,24 +59,24 @@ Denso,Mann,Amortiguadores,Mustang,2023,376.13,182
 Hella,Sachs,Faros,Corolla,2023,122.06,172
 Bosch,Sachs,Filtros de aire,Civic,2018,470.83,32
 Denso,Sachs,Faros,Model 3,2018,406.48,162
-Bosch,Pioneer,Batería,Camry,2020,458.39,6
-Pioneer,NGK,Batería,Model 3,2019,426.49,159
-NGK,Brembo,Bujías,Model 3,2018,103.79,174
-Brembo,Monroe,Bujías,Camry,2021,418.48,80
+Bosch,Pioneer,Baterï¿½a,Camry,2020,458.39,6
+Pioneer,NGK,Baterï¿½a,Model 3,2019,426.49,159
+NGK,Brembo,Bujï¿½as,Model 3,2018,103.79,174
+Brembo,Monroe,Bujï¿½as,Camry,2021,418.48,80
 NGK,Denso,Filtros de aire,A4,2020,379.93,39
 NGK,Monroe,Discos de freno,X5,2022,128.59,7
 Bosch,Hella,Discos de freno,X5,2019,259.53,87
 Monroe,NGK,Filtros de aceite,Model S,2022,221.15,131
 Bosch,NGK,Limpiaparabrisas,Mustang,2019,392.79,3
-Bosch,Pioneer,Batería,Accord,2019,323.68,21
+Bosch,Pioneer,Baterï¿½a,Accord,2019,323.68,21
 Valeo,Sachs,Embrague,Model 3,2023,11.42,113
 Brembo,Mann,Limpiaparabrisas,Camry,2021,467.48,139
-Hella,Sachs,Batería,Accord,2021,341.38,17
+Hella,Sachs,Baterï¿½a,Accord,2021,341.38,17
 Pioneer,Sachs,Faros,Civic,2023,258.18,32
 Pioneer,Denso,Discos de freno,Civic,2018,267.89,146
 Bosch,Pioneer,Embrague,A4,2023,445.96,12
-Denso,Monroe,Batería,Model S,2023,42.48,38
-Sachs,Mann,Batería,X5,2022,300.96,129
+Denso,Monroe,Baterï¿½a,Model S,2023,42.48,38
+Sachs,Mann,Baterï¿½a,X5,2022,300.96,129
 Pioneer,Denso,Altavoces,Accord,2021,428.25,65
 Bosch,Bosch,Amortiguadores,A4,2023,289.88,149
 Monroe,Denso,Faros,A4,2023,153.42,65
@@ -87,9 +87,9 @@ NGK,Hella,Amortiguadores,Model S,2020,268.58,176
 Valeo,Hella,Discos de freno,Civic,2018,286.87,25
 Pioneer,Mann,Embrague,A4,2023,294.9,114
 Pioneer,Hella,Limpiaparabrisas,Model 3,2019,290.99,132
-Valeo,Valeo,Bujías,Model 3,2021,311.05,13
+Valeo,Valeo,Bujï¿½as,Model 3,2021,311.05,13
 Mann,Mann,Amortiguadores,Civic,2019,81.2,118
-Mann,Pioneer,Bujías,A4,2023,277.01,165
+Mann,Pioneer,Bujï¿½as,A4,2023,277.01,165
 Sachs,Monroe,Limpiaparabrisas,Accord,2018,468.2,110
 Hella,Denso,Filtros de aceite,Model S,2021,39.05,107
 Sachs,Sachs,Altavoces,Mustang,2023,142.97,174
@@ -98,11 +98,11 @@ Brembo,Sachs,Faros,Civic,2023,8.37,163
 Pioneer,Bosch,Filtros de aire,Corolla,2022,371.46,182
 Pioneer,Sachs,Filtros de aire,Corolla,2022,116.62,89
 Hella,Bosch,Filtros de aceite,Civic,2020,58.51,6
-Valeo,Pioneer,Bujías,Corolla,2020,399.8,1
+Valeo,Pioneer,Bujï¿½as,Corolla,2020,399.8,1
 Mann,Bosch,Discos de freno,X5,2019,332.71,26
 Brembo,Denso,Limpiaparabrisas,Civic,2023,416.96,179
 Mann,Valeo,Discos de freno,A4,2023,368.93,149
-Sachs,NGK,Bujías,Model 3,2019,383.23,22
+Sachs,NGK,Bujï¿½as,Model 3,2019,383.23,22
 Pioneer,Mann,Faros,Corolla,2021,277.92,69
 Mann,Hella,Embrague,X5,2018,194.89,173
 Monroe,NGK,Filtros de aire,Accord,2023,121.87,173
@@ -112,19 +112,19 @@ Valeo,Pioneer,Altavoces,Model 3,2022,210.08,74
 Mann,Pioneer,Embrague,A4,2020,224.94,100
 Denso,NGK,Faros,A4,2018,168.44,131
 Bosch,Monroe,Amortiguadores,Model S,2023,54.42,48
-Pioneer,Monroe,Batería,Model 3,2020,56.35,134
-Sachs,Pioneer,Batería,Model S,2021,478.77,188
-Monroe,Bosch,Batería,Mustang,2020,416.81,130
-Sachs,Pioneer,Batería,Mustang,2020,496.48,164
+Pioneer,Monroe,Baterï¿½a,Model 3,2020,56.35,134
+Sachs,Pioneer,Baterï¿½a,Model S,2021,478.77,188
+Monroe,Bosch,Baterï¿½a,Mustang,2020,416.81,130
+Sachs,Pioneer,Baterï¿½a,Mustang,2020,496.48,164
 Mann,Brembo,Amortiguadores,Mustang,2023,242.72,175
 Pioneer,Denso,Amortiguadores,Model 3,2021,367.51,23
 Hella,Pioneer,Faros,Corolla,2023,34.21,78
-Pioneer,Brembo,Bujías,Model S,2021,449.04,29
+Pioneer,Brembo,Bujï¿½as,Model S,2021,449.04,29
 Brembo,Valeo,Faros,Mustang,2019,334.54,49
 Monroe,Bosch,Altavoces,Model 3,2021,69.04,113
 Sachs,Hella,Discos de freno,Mustang,2018,37.8,69
-Hella,Brembo,Batería,Civic,2022,157.22,140
-Bosch,Pioneer,Bujías,A4,2018,362.72,66
+Hella,Brembo,Baterï¿½a,Civic,2022,157.22,140
+Bosch,Pioneer,Bujï¿½as,A4,2018,362.72,66
 Sachs,Bosch,Limpiaparabrisas,X5,2018,141.37,42
 NGK,Valeo,Discos de freno,Civic,2019,98.2,33
 Bosch,Mann,Embrague,Model 3,2019,300.32,60
@@ -132,14 +132,14 @@ Hella,Monroe,Faros,Civic,2018,124.04,113
 Hella,Pioneer,Faros,Accord,2022,324.04,62
 Sachs,Brembo,Filtros de aceite,Accord,2022,42.42,139
 Pioneer,Sachs,Discos de freno,Mustang,2019,274.55,80
-Monroe,Monroe,Bujías,A4,2023,230.15,2
+Monroe,Monroe,Bujï¿½as,A4,2023,230.15,2
 Hella,Denso,Embrague,Camry,2021,423.32,60
 Monroe,Bosch,Filtros de aire,X5,2022,430.98,30
 Bosch,Mann,Filtros de aire,Mustang,2019,79.58,123
 Bosch,NGK,Filtros de aire,Accord,2023,401.63,6
-Sachs,Denso,Bujías,Camry,2022,171.93,53
+Sachs,Denso,Bujï¿½as,Camry,2022,171.93,53
 Brembo,Monroe,Embrague,X5,2018,102.65,102
-NGK,Sachs,Bujías,A4,2022,221.84,178
+NGK,Sachs,Bujï¿½as,A4,2022,221.84,178
 NGK,Brembo,Altavoces,Accord,2023,250.05,188
 NGK,Mann,Faros,Model 3,2018,280.19,114
 Denso,Valeo,Filtros de aire,Model S,2022,329.39,48
@@ -151,23 +151,23 @@ NGK,Mann,Amortiguadores,Accord,2021,224.54,19
 Brembo,Brembo,Amortiguadores,Corolla,2023,11.15,55
 Bosch,Valeo,Filtros de aire,Model 3,2022,452.51,81
 Sachs,Mann,Discos de freno,Camry,2023,83.2,170
-Denso,Denso,Batería,Corolla,2021,121.17,25
+Denso,Denso,Baterï¿½a,Corolla,2021,121.17,25
 Mann,Pioneer,Amortiguadores,Model S,2021,212.89,8
 Denso,Monroe,Faros,Model S,2021,404.68,81
 Mann,Sachs,Altavoces,Model S,2019,348.31,58
 Bosch,Hella,Filtros de aceite,Model 3,2019,119.44,110
-Valeo,Bosch,Bujías,X5,2021,282.37,109
+Valeo,Bosch,Bujï¿½as,X5,2021,282.37,109
 NGK,Hella,Amortiguadores,X5,2023,171.33,146
 Valeo,Monroe,Amortiguadores,Model 3,2019,375.29,118
-Bosch,Brembo,Bujías,Camry,2021,12.34,64
-Mann,Denso,Bujías,Accord,2020,286.81,176
-Sachs,Valeo,Batería,Mustang,2019,109.46,102
+Bosch,Brembo,Bujï¿½as,Camry,2021,12.34,64
+Mann,Denso,Bujï¿½as,Accord,2020,286.81,176
+Sachs,Valeo,Baterï¿½a,Mustang,2019,109.46,102
 Monroe,Hella,Filtros de aire,Corolla,2021,50.14,112
-NGK,Hella,Bujías,Model S,2022,78.33,9
+NGK,Hella,Bujï¿½as,Model S,2022,78.33,9
 Brembo,Pioneer,Altavoces,A4,2018,352.65,111
 Bosch,Mann,Altavoces,X5,2023,473.33,4
 Bosch,Mann,Amortiguadores,Corolla,2022,162.04,127
-Mann,Bosch,Batería,X5,2020,148.78,132
+Mann,Bosch,Baterï¿½a,X5,2020,148.78,132
 Brembo,Sachs,Embrague,Accord,2022,427.27,60
 Sachs,Mann,Amortiguadores,A4,2019,329.34,101
 Monroe,Monroe,Amortiguadores,Corolla,2020,68.14,144
@@ -175,15 +175,15 @@ Mann,Hella,Amortiguadores,Model S,2018,123.96,129
 Monroe,Denso,Filtros de aire,Corolla,2021,118.14,39
 Hella,Mann,Filtros de aceite,Accord,2021,491.57,77
 Hella,Hella,Faros,Mustang,2021,211.97,124
-Bosch,Bosch,Bujías,Camry,2021,148.64,79
+Bosch,Bosch,Bujï¿½as,Camry,2021,148.64,79
 Sachs,NGK,Filtros de aceite,Corolla,2022,78.74,11
-Pioneer,Pioneer,Filtros de aire,Civic,2021,458.0,34
-Hella,Pioneer,Bujías,Mustang,2018,270.28,88
+Pioneer,Pioneer,Filtros de aire,Civic,2021,458,34
+Hella,Pioneer,Bujï¿½as,Mustang,2018,270.28,88
 Monroe,Hella,Filtros de aceite,Camry,2020,279.06,86
 Bosch,Sachs,Altavoces,Model 3,2022,275.07,4
 Bosch,Valeo,Filtros de aceite,Model S,2023,36.75,101
 Bosch,Valeo,Filtros de aceite,Camry,2018,336.32,11
-Mann,Bosch,Bujías,Model 3,2018,365.08,116
+Mann,Bosch,Bujï¿½as,Model 3,2018,365.08,116
 Bosch,Monroe,Embrague,Civic,2021,103.94,187
 Brembo,Monroe,Altavoces,Corolla,2021,271.27,90
 Pioneer,Bosch,Amortiguadores,Civic,2020,100.26,97
@@ -195,34 +195,34 @@ Mann,Brembo,Filtros de aceite,Corolla,2023,206.57,77
 Brembo,Valeo,Embrague,Model S,2019,371.75,144
 Pioneer,NGK,Filtros de aire,X5,2021,46.84,191
 Brembo,Denso,Amortiguadores,Model 3,2023,173.82,107
-Denso,Hella,Bujías,Mustang,2019,60.85,105
+Denso,Hella,Bujï¿½as,Mustang,2019,60.85,105
 NGK,Monroe,Amortiguadores,A4,2021,206.62,127
 Bosch,Hella,Altavoces,Accord,2021,234.1,64
 Brembo,NGK,Limpiaparabrisas,A4,2018,268.74,94
 Monroe,Pioneer,Filtros de aceite,Corolla,2023,73.1,21
-Sachs,Bosch,Filtros de aire,Model S,2018,193.0,101
+Sachs,Bosch,Filtros de aire,Model S,2018,193,101
 Mann,Sachs,Filtros de aceite,Accord,2020,430.91,195
 Bosch,Bosch,Filtros de aire,Mustang,2019,172.58,64
-Pioneer,Hella,Bujías,Camry,2019,316.85,156
+Pioneer,Hella,Bujï¿½as,Camry,2019,316.85,156
 Pioneer,Brembo,Amortiguadores,Civic,2018,444.12,30
 Bosch,Brembo,Altavoces,Corolla,2020,410.96,34
-NGK,Bosch,Batería,Camry,2021,116.96,130
-Pioneer,Sachs,Bujías,Model S,2023,51.29,72
+NGK,Bosch,Baterï¿½a,Camry,2021,116.96,130
+Pioneer,Sachs,Bujï¿½as,Model S,2023,51.29,72
 Monroe,Mann,Filtros de aceite,X5,2020,34.59,158
 Sachs,Mann,Filtros de aire,X5,2022,441.99,152
-Denso,Hella,Batería,A4,2019,114.31,92
+Denso,Hella,Baterï¿½a,A4,2019,114.31,92
 Brembo,Bosch,Embrague,A4,2019,289.32,61
 Bosch,Mann,Filtros de aceite,Corolla,2022,77.04,18
 Valeo,Pioneer,Filtros de aceite,Camry,2022,60.45,145
-Mann,Brembo,Bujías,Model 3,2023,106.98,185
+Mann,Brembo,Bujï¿½as,Model 3,2023,106.98,185
 Hella,Valeo,Filtros de aceite,Accord,2023,439.69,39
 Valeo,NGK,Discos de freno,Model 3,2021,454.27,188
 Brembo,Brembo,Amortiguadores,A4,2019,499.1,173
 Hella,Pioneer,Limpiaparabrisas,Civic,2020,354.71,109
 Mann,Bosch,Amortiguadores,Mustang,2018,50.03,122
-NGK,Valeo,Bujías,Mustang,2023,486.34,14
+NGK,Valeo,Bujï¿½as,Mustang,2023,486.34,14
 Valeo,Valeo,Altavoces,Camry,2021,418.14,17
-Mann,NGK,Batería,Accord,2021,140.76,113
+Mann,NGK,Baterï¿½a,Accord,2021,140.76,113
 Hella,Bosch,Altavoces,Model 3,2019,441.15,28
 NGK,Bosch,Limpiaparabrisas,Civic,2023,62.42,36
 Bosch,Hella,Embrague,Accord,2023,118.45,131
@@ -231,15 +231,15 @@ Mann,Sachs,Limpiaparabrisas,Civic,2023,284.85,34
 Monroe,Brembo,Altavoces,Corolla,2021,404.11,28
 Mann,Brembo,Limpiaparabrisas,Model 3,2019,356.63,45
 Mann,Sachs,Amortiguadores,X5,2020,200.51,132
-Bosch,Brembo,Batería,Mustang,2020,471.93,11
-Monroe,Mann,Batería,Accord,2020,281.43,135
+Bosch,Brembo,Baterï¿½a,Mustang,2020,471.93,11
+Monroe,Mann,Baterï¿½a,Accord,2020,281.43,135
 NGK,Brembo,Limpiaparabrisas,Civic,2022,386.44,161
 Denso,Mann,Filtros de aceite,Accord,2018,239.21,126
 Mann,Mann,Faros,Corolla,2020,45.88,147
 Denso,Pioneer,Filtros de aceite,A4,2022,137.25,42
 Monroe,Monroe,Amortiguadores,Civic,2020,257.69,117
 Denso,Monroe,Filtros de aire,Model S,2023,394.35,153
-Bosch,Denso,Batería,Camry,2019,183.5,52
+Bosch,Denso,Baterï¿½a,Camry,2019,183.5,52
 Denso,Sachs,Discos de freno,Mustang,2023,300.69,102
 Mann,Pioneer,Faros,Civic,2018,471.57,85
 Bosch,Bosch,Altavoces,X5,2021,79.49,58
@@ -268,27 +268,27 @@ Denso,Sachs,Embrague,Accord,2019,75.75,39
 Bosch,Sachs,Faros,Civic,2019,445.99,155
 Denso,Denso,Filtros de aceite,Accord,2018,434.36,156
 Brembo,Pioneer,Limpiaparabrisas,Civic,2020,150.57,107
-Denso,Pioneer,Batería,Model 3,2019,13.56,66
+Denso,Pioneer,Baterï¿½a,Model 3,2019,13.56,66
 Denso,Brembo,Discos de freno,Civic,2023,444.39,28
-NGK,Monroe,Bujías,Model 3,2020,223.34,135
+NGK,Monroe,Bujï¿½as,Model 3,2020,223.34,135
 NGK,NGK,Altavoces,Camry,2018,109.52,53
 NGK,Mann,Discos de freno,Accord,2018,466.37,93
 Pioneer,Bosch,Filtros de aire,Camry,2021,164.96,139
 NGK,Pioneer,Altavoces,Camry,2023,359.89,137
 Mann,Monroe,Amortiguadores,Model 3,2023,255.11,135
-Brembo,Pioneer,Bujías,Model 3,2023,497.19,86
+Brembo,Pioneer,Bujï¿½as,Model 3,2023,497.19,86
 Bosch,Brembo,Faros,Corolla,2023,280.82,106
 Sachs,Denso,Discos de freno,Mustang,2021,417.84,89
 Bosch,NGK,Discos de freno,Camry,2023,499.21,124
 Mann,Denso,Limpiaparabrisas,Accord,2022,71.55,25
 Denso,Denso,Faros,Model 3,2018,286.31,173
 Bosch,Sachs,Filtros de aceite,X5,2021,145.36,181
-Monroe,Bosch,Batería,Mustang,2018,329.69,94
+Monroe,Bosch,Baterï¿½a,Mustang,2018,329.69,94
 Valeo,Denso,Faros,Model 3,2018,483.18,118
-Pioneer,Monroe,Batería,Camry,2021,311.36,69
+Pioneer,Monroe,Baterï¿½a,Camry,2021,311.36,69
 Sachs,Bosch,Amortiguadores,Model 3,2021,13.49,148
 Bosch,Sachs,Amortiguadores,Camry,2020,405.42,92
-Valeo,Denso,Batería,Model 3,2022,372.88,2
+Valeo,Denso,Baterï¿½a,Model 3,2022,372.88,2
 Hella,Monroe,Filtros de aire,Corolla,2023,115.79,77
 Valeo,Sachs,Faros,Civic,2021,115.12,21
 Denso,Valeo,Filtros de aire,Model S,2022,334.01,17
@@ -299,10 +299,10 @@ Brembo,Sachs,Embrague,Camry,2022,116.59,143
 Pioneer,Bosch,Limpiaparabrisas,Model 3,2023,71.66,181
 Mann,Mann,Embrague,Model S,2021,29.48,78
 Denso,NGK,Discos de freno,Corolla,2018,335.1,88
-Monroe,Mann,Batería,Model 3,2020,184.22,95
+Monroe,Mann,Baterï¿½a,Model 3,2020,184.22,95
 Bosch,Valeo,Filtros de aire,Mustang,2019,170.6,135
 Bosch,Mann,Discos de freno,Mustang,2020,209.08,80
-Brembo,Bosch,Bujías,Accord,2019,418.01,167
+Brembo,Bosch,Bujï¿½as,Accord,2019,418.01,167
 Brembo,Brembo,Filtros de aceite,Model 3,2018,415.17,13
 Mann,Bosch,Altavoces,A4,2020,109.84,57
 Valeo,Sachs,Filtros de aceite,Corolla,2022,390.34,188
@@ -311,7 +311,7 @@ Bosch,Pioneer,Filtros de aceite,Accord,2023,403.95,49
 Mann,Pioneer,Amortiguadores,Model 3,2019,361.59,117
 Mann,Sachs,Amortiguadores,X5,2018,382.96,165
 Sachs,Monroe,Altavoces,Corolla,2021,261.91,2
-Bosch,Denso,Batería,X5,2018,316.2,177
+Bosch,Denso,Baterï¿½a,X5,2018,316.2,177
 Denso,Denso,Embrague,Corolla,2021,317.91,5
 Sachs,Pioneer,Limpiaparabrisas,A4,2023,360.19,118
 Sachs,NGK,Altavoces,A4,2023,149.48,189
@@ -320,22 +320,22 @@ Denso,Denso,Limpiaparabrisas,A4,2022,222.09,38
 Bosch,Pioneer,Discos de freno,Model S,2023,335.44,110
 Hella,Monroe,Altavoces,A4,2022,24.07,81
 Monroe,Denso,Altavoces,Camry,2022,304.92,30
-NGK,Denso,Batería,Civic,2021,218.51,25
+NGK,Denso,Baterï¿½a,Civic,2021,218.51,25
 Valeo,Valeo,Altavoces,X5,2022,125.95,157
 Monroe,Monroe,Filtros de aceite,X5,2020,290.94,116
 Brembo,Pioneer,Filtros de aire,Model S,2021,53.53,5
 Valeo,Monroe,Faros,Civic,2023,195.17,108
 Valeo,Valeo,Amortiguadores,Corolla,2020,381.6,150
-Bosch,NGK,Bujías,Corolla,2023,310.21,129
-Hella,Bosch,Bujías,Model 3,2020,202.65,5
-NGK,Valeo,Batería,Model S,2021,239.21,99
-Valeo,Hella,Batería,Camry,2023,24.05,108
+Bosch,NGK,Bujï¿½as,Corolla,2023,310.21,129
+Hella,Bosch,Bujï¿½as,Model 3,2020,202.65,5
+NGK,Valeo,Baterï¿½a,Model S,2021,239.21,99
+Valeo,Hella,Baterï¿½a,Camry,2023,24.05,108
 NGK,Mann,Amortiguadores,Model S,2020,41.63,87
-Valeo,Sachs,Bujías,Civic,2018,339.98,71
+Valeo,Sachs,Bujï¿½as,Civic,2018,339.98,71
 Hella,Brembo,Filtros de aceite,Model S,2020,114.99,56
 Hella,Bosch,Filtros de aceite,Accord,2023,294.23,102
 Hella,Bosch,Embrague,A4,2022,108.82,94
-Hella,Monroe,Bujías,Accord,2023,344.49,91
+Hella,Monroe,Bujï¿½as,Accord,2023,344.49,91
 Pioneer,Hella,Amortiguadores,X5,2019,85.72,97
 Denso,Brembo,Filtros de aire,Model 3,2022,243.36,159
 Hella,Mann,Filtros de aire,Model S,2021,147.48,73
@@ -343,9 +343,9 @@ Brembo,Brembo,Faros,Accord,2020,102.11,184
 Brembo,Sachs,Embrague,Model 3,2018,197.86,110
 NGK,Sachs,Filtros de aceite,X5,2018,432.83,99
 Bosch,Hella,Embrague,Civic,2023,304.57,43
-Mann,Bosch,Bujías,Model S,2022,471.51,35
+Mann,Bosch,Bujï¿½as,Model S,2022,471.51,35
 Sachs,Brembo,Faros,Corolla,2022,493.53,46
-Denso,Bosch,Bujías,Camry,2022,407.84,60
+Denso,Bosch,Bujï¿½as,Camry,2022,407.84,60
 Bosch,Valeo,Embrague,Model 3,2019,139.13,58
 Pioneer,Monroe,Discos de freno,Model S,2020,362.53,149
 NGK,Hella,Amortiguadores,Camry,2018,337.57,191
@@ -358,16 +358,16 @@ NGK,Sachs,Amortiguadores,Mustang,2023,302.31,30
 Denso,Hella,Faros,A4,2023,414.59,8
 Denso,Brembo,Amortiguadores,Corolla,2019,73.31,70
 Monroe,Pioneer,Faros,Corolla,2020,284.85,40
-Hella,Brembo,Batería,Accord,2020,53.18,55
+Hella,Brembo,Baterï¿½a,Accord,2020,53.18,55
 Bosch,Hella,Amortiguadores,Model 3,2021,322.05,162
-Mann,NGK,Bujías,Civic,2019,19.38,173
+Mann,NGK,Bujï¿½as,Civic,2019,19.38,173
 Pioneer,Monroe,Embrague,A4,2023,149.09,28
 Sachs,Denso,Amortiguadores,Corolla,2023,251.78,23
 Pioneer,Valeo,Faros,Civic,2023,94.35,168
 NGK,Mann,Filtros de aire,Mustang,2023,324.49,39
-Pioneer,Monroe,Bujías,Mustang,2019,405.26,183
-Hella,Brembo,Bujías,X5,2020,135.18,196
-Hella,Denso,Bujías,Camry,2020,282.68,146
+Pioneer,Monroe,Bujï¿½as,Mustang,2019,405.26,183
+Hella,Brembo,Bujï¿½as,X5,2020,135.18,196
+Hella,Denso,Bujï¿½as,Camry,2020,282.68,146
 Monroe,Monroe,Faros,Model S,2022,393.36,97
 NGK,Bosch,Filtros de aire,X5,2023,252.7,42
 Denso,Hella,Faros,Accord,2023,323.12,178
@@ -375,19 +375,19 @@ Pioneer,Denso,Discos de freno,Corolla,2021,165.05,152
 Valeo,Pioneer,Limpiaparabrisas,Civic,2020,445.05,48
 Hella,NGK,Faros,Model S,2018,256.83,129
 Monroe,Brembo,Embrague,X5,2022,397.81,130
-Sachs,Valeo,Batería,Mustang,2019,289.69,5
+Sachs,Valeo,Baterï¿½a,Mustang,2019,289.69,5
 Hella,Bosch,Altavoces,Civic,2021,67.81,76
-Sachs,Bosch,Bujías,Camry,2023,296.46,167
+Sachs,Bosch,Bujï¿½as,Camry,2023,296.46,167
 NGK,Monroe,Embrague,Model 3,2023,454.88,60
 Brembo,Valeo,Amortiguadores,Corolla,2023,479.61,47
-Bosch,Monroe,Batería,X5,2020,129.24,89
+Bosch,Monroe,Baterï¿½a,X5,2020,129.24,89
 Pioneer,Bosch,Filtros de aceite,Model S,2019,243.09,112
 Pioneer,Valeo,Embrague,A4,2020,401.24,192
 Hella,Valeo,Discos de freno,Model S,2022,461.64,169
-Brembo,Valeo,Batería,Model S,2019,372.87,182
+Brembo,Valeo,Baterï¿½a,Model S,2019,372.87,182
 NGK,Hella,Limpiaparabrisas,Mustang,2023,17.85,23
 Mann,Hella,Filtros de aceite,Camry,2021,91.09,23
-Hella,Hella,Batería,Model S,2023,323.75,170
+Hella,Hella,Baterï¿½a,Model S,2023,323.75,170
 NGK,NGK,Altavoces,Civic,2020,92.63,89
 Pioneer,Bosch,Filtros de aire,Model S,2018,362.39,102
 Pioneer,Mann,Embrague,Model S,2020,367.56,192
@@ -396,20 +396,20 @@ Valeo,Valeo,Embrague,X5,2021,296.92,112
 Valeo,Monroe,Faros,Camry,2021,246.63,108
 Monroe,Bosch,Filtros de aceite,Civic,2021,368.66,59
 Sachs,Bosch,Altavoces,Mustang,2022,416.26,176
-Hella,Brembo,Bujías,Mustang,2022,471.25,70
+Hella,Brembo,Bujï¿½as,Mustang,2022,471.25,70
 Sachs,Brembo,Altavoces,Model 3,2023,14.06,99
 Monroe,Bosch,Faros,X5,2021,376.01,113
 Denso,Mann,Embrague,Model 3,2018,125.49,122
 Denso,Bosch,Filtros de aceite,Accord,2020,224.8,167
 NGK,Bosch,Discos de freno,Civic,2021,251.04,14
-Mann,Mann,Batería,Civic,2022,282.74,189
+Mann,Mann,Baterï¿½a,Civic,2022,282.74,189
 Mann,Brembo,Discos de freno,Model 3,2019,324.63,7
 Sachs,NGK,Discos de freno,Model 3,2019,147.81,103
 Sachs,Hella,Faros,Mustang,2023,125.06,25
 Valeo,Monroe,Limpiaparabrisas,Accord,2020,410.72,97
 Pioneer,NGK,Amortiguadores,Accord,2020,311.05,69
 Pioneer,Mann,Discos de freno,Camry,2022,239.1,47
-Pioneer,NGK,Bujías,Mustang,2018,42.47,86
+Pioneer,NGK,Bujï¿½as,Mustang,2018,42.47,86
 Bosch,Mann,Filtros de aire,Accord,2018,114.69,3
 Denso,Monroe,Discos de freno,Model S,2018,98.39,10
 NGK,Mann,Filtros de aire,A4,2021,479.97,46
@@ -418,7 +418,7 @@ Mann,Hella,Amortiguadores,Accord,2022,474.16,53
 Hella,Valeo,Filtros de aceite,X5,2023,474.66,122
 Monroe,Hella,Discos de freno,Mustang,2022,331.02,153
 Monroe,Valeo,Filtros de aire,A4,2020,291.38,21
-Valeo,NGK,Bujías,Camry,2020,246.15,68
+Valeo,NGK,Bujï¿½as,Camry,2020,246.15,68
 Hella,Mann,Faros,A4,2022,213.85,68
 Monroe,Brembo,Limpiaparabrisas,Civic,2022,161.16,118
 Mann,NGK,Embrague,A4,2018,376.1,19
@@ -440,12 +440,12 @@ Brembo,Bosch,Limpiaparabrisas,Model S,2020,344.71,74
 NGK,Denso,Faros,Model S,2023,348.2,186
 Monroe,Hella,Limpiaparabrisas,Corolla,2020,286.4,22
 Hella,Hella,Limpiaparabrisas,Civic,2020,65.7,32
-Monroe,Pioneer,Bujías,A4,2018,443.24,103
-Pioneer,Pioneer,Batería,X5,2019,101.32,81
+Monroe,Pioneer,Bujï¿½as,A4,2018,443.24,103
+Pioneer,Pioneer,Baterï¿½a,X5,2019,101.32,81
 Mann,Monroe,Embrague,X5,2018,311.13,41
 Bosch,Hella,Altavoces,Mustang,2022,412.57,14
 Valeo,Bosch,Faros,Mustang,2019,344.7,108
-NGK,Brembo,Batería,Civic,2020,113.23,71
+NGK,Brembo,Baterï¿½a,Civic,2020,113.23,71
 Monroe,NGK,Discos de freno,X5,2021,42.61,158
 Hella,Monroe,Faros,Model S,2021,182.17,198
 NGK,NGK,Amortiguadores,Camry,2022,175.42,3
@@ -456,46 +456,46 @@ Hella,Hella,Filtros de aire,Corolla,2023,487.98,65
 Hella,Denso,Embrague,Corolla,2019,10.77,136
 Mann,Monroe,Amortiguadores,Camry,2019,485.03,185
 Bosch,Mann,Amortiguadores,Mustang,2021,114.02,195
-Pioneer,Hella,Batería,Civic,2018,464.22,136
+Pioneer,Hella,Baterï¿½a,Civic,2018,464.22,136
 Monroe,Mann,Filtros de aire,X5,2020,142.67,129
 Bosch,Denso,Faros,Model 3,2019,358.01,46
 Bosch,Sachs,Embrague,X5,2019,423.19,79
 Mann,Brembo,Altavoces,Mustang,2019,91.35,163
 Pioneer,Valeo,Faros,Mustang,2021,268.43,98
-NGK,Monroe,Batería,Accord,2021,258.86,77
+NGK,Monroe,Baterï¿½a,Accord,2021,258.86,77
 Sachs,Pioneer,Amortiguadores,A4,2023,315.16,14
 Denso,Valeo,Filtros de aceite,Model S,2018,276.28,23
 Mann,Denso,Altavoces,Civic,2020,295.44,12
 Pioneer,Mann,Amortiguadores,Camry,2020,302.83,36
-NGK,Denso,Bujías,Civic,2021,426.49,77
-Monroe,Brembo,Bujías,Corolla,2020,207.23,139
+NGK,Denso,Bujï¿½as,Civic,2021,426.49,77
+Monroe,Brembo,Bujï¿½as,Corolla,2020,207.23,139
 NGK,Sachs,Limpiaparabrisas,Model 3,2021,329.41,122
 Monroe,Valeo,Faros,Camry,2021,241.03,13
 Monroe,Pioneer,Amortiguadores,A4,2023,263.43,150
-Sachs,Bosch,Batería,X5,2019,432.99,178
+Sachs,Bosch,Baterï¿½a,X5,2019,432.99,178
 Bosch,Monroe,Limpiaparabrisas,Model S,2019,163.87,181
 Pioneer,Bosch,Filtros de aceite,Model 3,2018,469.56,42
 Pioneer,Mann,Faros,X5,2019,144.72,192
-Mann,NGK,Bujías,Corolla,2022,318.94,95
+Mann,NGK,Bujï¿½as,Corolla,2022,318.94,95
 NGK,Brembo,Amortiguadores,Camry,2020,476.12,136
 Pioneer,Valeo,Discos de freno,Civic,2021,64.86,148
 Mann,Sachs,Amortiguadores,Camry,2023,462.11,43
-Mann,Bosch,Bujías,Model 3,2020,141.88,152
+Mann,Bosch,Bujï¿½as,Model 3,2020,141.88,152
 Bosch,Brembo,Altavoces,X5,2023,93.58,97
 Hella,Hella,Limpiaparabrisas,Civic,2023,406.99,33
-Valeo,Pioneer,Embrague,A4,2023,118.0,37
+Valeo,Pioneer,Embrague,A4,2023,118,37
 Hella,Denso,Discos de freno,Accord,2023,307.64,130
 Hella,Brembo,Discos de freno,Camry,2021,467.9,26
 Bosch,Pioneer,Discos de freno,Corolla,2022,319.88,62
 Hella,NGK,Discos de freno,Corolla,2020,284.75,183
-Bosch,Valeo,Bujías,X5,2018,249.78,59
+Bosch,Valeo,Bujï¿½as,X5,2018,249.78,59
 Valeo,Denso,Limpiaparabrisas,X5,2019,360.01,91
 Denso,Sachs,Altavoces,Model S,2021,489.24,124
 NGK,Denso,Embrague,Civic,2023,456.82,99
 Pioneer,Mann,Amortiguadores,Camry,2022,13.36,192
 NGK,Valeo,Faros,Mustang,2022,191.87,173
 Denso,Valeo,Faros,Model S,2018,140.05,51
-Brembo,Mann,Bujías,A4,2022,240.06,126
+Brembo,Mann,Bujï¿½as,A4,2022,240.06,126
 Denso,Pioneer,Amortiguadores,Civic,2020,309.99,82
 Sachs,Bosch,Altavoces,A4,2018,301.17,125
 Hella,Bosch,Filtros de aire,A4,2021,223.7,104
@@ -506,7 +506,7 @@ NGK,Sachs,Amortiguadores,Accord,2021,401.15,186
 Bosch,Pioneer,Altavoces,Corolla,2023,315.52,16
 Hella,Bosch,Altavoces,X5,2020,101.84,63
 Sachs,NGK,Altavoces,Accord,2020,102.62,72
-Monroe,NGK,Batería,Accord,2020,51.97,1
+Monroe,NGK,Baterï¿½a,Accord,2020,51.97,1
 Valeo,Monroe,Embrague,Accord,2022,310.78,24
 Sachs,Monroe,Filtros de aire,X5,2021,301.17,16
 NGK,Mann,Altavoces,Model 3,2018,183.54,130
@@ -517,13 +517,13 @@ Valeo,Brembo,Amortiguadores,Accord,2018,482.8,42
 Mann,Mann,Altavoces,Model S,2020,208.48,187
 Brembo,Mann,Altavoces,X5,2021,64.77,193
 Denso,NGK,Limpiaparabrisas,Accord,2022,142.37,160
-Mann,Mann,Bujías,X5,2023,351.04,159
+Mann,Mann,Bujï¿½as,X5,2023,351.04,159
 NGK,Hella,Embrague,Model S,2023,104.99,68
-Denso,Bosch,Bujías,X5,2022,357.09,13
-Sachs,Bosch,Batería,Civic,2019,488.21,180
+Denso,Bosch,Bujï¿½as,X5,2022,357.09,13
+Sachs,Bosch,Baterï¿½a,Civic,2019,488.21,180
 Brembo,NGK,Altavoces,Model S,2023,306.66,4
 Denso,Valeo,Altavoces,Mustang,2018,348.36,68
-Mann,Brembo,Bujías,Accord,2021,163.86,115
+Mann,Brembo,Bujï¿½as,Accord,2021,163.86,115
 Valeo,Valeo,Altavoces,Model S,2020,114.5,158
 Denso,Bosch,Discos de freno,Mustang,2018,29.61,13
 Brembo,NGK,Limpiaparabrisas,Mustang,2022,98.67,12
@@ -536,16 +536,16 @@ Monroe,Sachs,Amortiguadores,A4,2023,390.65,178
 Mann,NGK,Filtros de aire,A4,2020,85.68,93
 Pioneer,Valeo,Limpiaparabrisas,A4,2020,306.22,53
 Valeo,Brembo,Faros,Accord,2019,79.69,77
-NGK,Monroe,Batería,Mustang,2018,182.07,131
+NGK,Monroe,Baterï¿½a,Mustang,2018,182.07,131
 Mann,Pioneer,Embrague,Model S,2019,34.63,13
 Mann,Monroe,Filtros de aceite,Accord,2021,88.37,171
 Valeo,NGK,Altavoces,Accord,2019,276.05,57
-Pioneer,Monroe,Bujías,Model 3,2020,135.2,166
+Pioneer,Monroe,Bujï¿½as,Model 3,2020,135.2,166
 Denso,Hella,Filtros de aceite,Accord,2023,203.47,13
 Bosch,Brembo,Embrague,A4,2021,278.7,29
 Pioneer,Brembo,Embrague,Mustang,2023,497.09,52
 Hella,Hella,Filtros de aire,Mustang,2018,148.75,29
-Monroe,Brembo,Bujías,Accord,2021,309.54,96
+Monroe,Brembo,Bujï¿½as,Accord,2021,309.54,96
 Mann,Brembo,Altavoces,A4,2022,320.09,136
 Monroe,Monroe,Embrague,Corolla,2019,444.21,84
 Denso,Pioneer,Embrague,Model S,2021,117.71,192
@@ -559,13 +559,13 @@ Monroe,Bosch,Amortiguadores,Mustang,2022,384.58,193
 Denso,Denso,Embrague,A4,2020,498.65,25
 Bosch,Monroe,Altavoces,Corolla,2019,243.66,133
 Valeo,NGK,Amortiguadores,Corolla,2019,77.41,18
-Bosch,Pioneer,Bujías,X5,2019,293.63,81
+Bosch,Pioneer,Bujï¿½as,X5,2019,293.63,81
 Brembo,Monroe,Faros,Accord,2019,70.83,195
-Valeo,Mann,Bujías,X5,2021,439.34,151
+Valeo,Mann,Bujï¿½as,X5,2021,439.34,151
 Sachs,Bosch,Filtros de aire,Model 3,2021,259.36,29
 NGK,Monroe,Filtros de aceite,Model 3,2020,161.36,23
 NGK,Pioneer,Filtros de aceite,Accord,2023,118.18,21
-NGK,Sachs,Batería,Camry,2018,222.87,149
+NGK,Sachs,Baterï¿½a,Camry,2018,222.87,149
 Brembo,Mann,Filtros de aire,Corolla,2021,300.25,196
 Pioneer,NGK,Altavoces,Corolla,2020,7.53,109
 Hella,Hella,Faros,Civic,2023,182.96,86
@@ -574,7 +574,7 @@ Valeo,Brembo,Altavoces,Corolla,2018,308.16,38
 Valeo,Bosch,Discos de freno,A4,2023,234.07,4
 Mann,NGK,Amortiguadores,Camry,2019,327.8,93
 Brembo,Valeo,Embrague,Model 3,2018,182.43,49
-Bosch,Pioneer,Batería,X5,2019,474.27,94
+Bosch,Pioneer,Baterï¿½a,X5,2019,474.27,94
 Hella,Sachs,Filtros de aire,A4,2018,111.63,180
 Hella,Denso,Filtros de aceite,Mustang,2019,236.94,37
 Monroe,Brembo,Amortiguadores,Accord,2018,172.37,16
@@ -586,7 +586,7 @@ Bosch,Sachs,Filtros de aceite,Camry,2023,299.82,189
 Hella,Denso,Altavoces,Accord,2018,234.91,182
 NGK,Mann,Embrague,X5,2019,456.52,61
 Hella,Pioneer,Discos de freno,Camry,2018,14.32,47
-Denso,Denso,Bujías,X5,2021,136.13,166
+Denso,Denso,Bujï¿½as,X5,2021,136.13,166
 NGK,Monroe,Filtros de aceite,Civic,2019,146.83,30
 Denso,Sachs,Altavoces,Civic,2022,147.49,167
 Bosch,NGK,Limpiaparabrisas,Civic,2021,371.33,172
@@ -600,13 +600,13 @@ Monroe,Denso,Limpiaparabrisas,Corolla,2018,344.53,65
 NGK,Pioneer,Limpiaparabrisas,Mustang,2020,392.57,14
 Sachs,NGK,Discos de freno,X5,2021,381.78,168
 Valeo,NGK,Limpiaparabrisas,Mustang,2022,26.04,34
-Sachs,Denso,Batería,Corolla,2022,132.07,119
-Pioneer,Monroe,Bujías,Corolla,2019,127.8,4
+Sachs,Denso,Baterï¿½a,Corolla,2022,132.07,119
+Pioneer,Monroe,Bujï¿½as,Corolla,2019,127.8,4
 Sachs,Pioneer,Discos de freno,Mustang,2019,31.88,87
 NGK,Denso,Altavoces,Civic,2021,125.21,98
 Pioneer,Mann,Embrague,Camry,2021,87.75,101
 Monroe,Brembo,Altavoces,X5,2023,492.82,57
-Sachs,Mann,Batería,Corolla,2023,70.73,80
+Sachs,Mann,Baterï¿½a,Corolla,2023,70.73,80
 Valeo,NGK,Filtros de aire,Civic,2018,334.39,175
 Bosch,NGK,Discos de freno,Civic,2019,313.5,197
 Brembo,Mann,Amortiguadores,A4,2019,169.55,155
@@ -624,13 +624,13 @@ Denso,Hella,Limpiaparabrisas,Accord,2021,402.17,154
 Denso,Bosch,Amortiguadores,Civic,2023,73.41,76
 Sachs,Bosch,Filtros de aceite,Model S,2022,306.01,99
 Sachs,Sachs,Filtros de aceite,Accord,2023,305.78,92
-Sachs,Denso,Batería,Model S,2019,325.68,12
-Monroe,NGK,Batería,Model S,2020,214.06,44
+Sachs,Denso,Baterï¿½a,Model S,2019,325.68,12
+Monroe,NGK,Baterï¿½a,Model S,2020,214.06,44
 Mann,Hella,Embrague,Civic,2018,293.19,18
 Brembo,NGK,Discos de freno,Civic,2021,438.45,115
-NGK,Denso,Bujías,Corolla,2018,214.44,24
+NGK,Denso,Bujï¿½as,Corolla,2018,214.44,24
 Brembo,Monroe,Altavoces,Civic,2020,341.36,157
-Hella,Mann,Bujías,Civic,2020,196.52,45
+Hella,Mann,Bujï¿½as,Civic,2020,196.52,45
 Sachs,Monroe,Amortiguadores,Camry,2019,45.92,196
 Sachs,Brembo,Filtros de aire,A4,2018,336.34,157
 Bosch,Pioneer,Faros,Accord,2018,53.43,118
@@ -648,26 +648,26 @@ NGK,Bosch,Filtros de aceite,A4,2023,190.77,179
 Sachs,Sachs,Amortiguadores,Mustang,2023,342.47,194
 NGK,Hella,Discos de freno,A4,2021,196.99,157
 Hella,NGK,Altavoces,X5,2020,497.67,172
-Sachs,Monroe,Batería,X5,2019,110.1,3
-Sachs,Valeo,Altavoces,Model 3,2022,336.0,73
+Sachs,Monroe,Baterï¿½a,X5,2019,110.1,3
+Sachs,Valeo,Altavoces,Model 3,2022,336,73
 NGK,Denso,Limpiaparabrisas,Accord,2018,41.31,196
 Monroe,NGK,Amortiguadores,Camry,2020,199.53,41
 Brembo,Bosch,Altavoces,Model 3,2019,105.96,67
-NGK,Valeo,Batería,A4,2022,496.95,148
-Monroe,Monroe,Bujías,Civic,2019,263.27,200
+NGK,Valeo,Baterï¿½a,A4,2022,496.95,148
+Monroe,Monroe,Bujï¿½as,Civic,2019,263.27,200
 NGK,Hella,Embrague,Civic,2022,491.06,134
 Hella,Monroe,Altavoces,Camry,2019,384.21,3
 NGK,Pioneer,Filtros de aceite,X5,2020,350.05,180
 Brembo,Monroe,Filtros de aceite,Accord,2019,447.56,173
-Monroe,Valeo,Batería,X5,2021,256.26,155
+Monroe,Valeo,Baterï¿½a,X5,2021,256.26,155
 Monroe,Valeo,Amortiguadores,X5,2023,494.31,60
-Denso,Brembo,Bujías,Corolla,2018,472.58,78
+Denso,Brembo,Bujï¿½as,Corolla,2018,472.58,78
 Denso,Valeo,Faros,Civic,2023,178.03,173
 Hella,Bosch,Altavoces,Camry,2021,324.49,38
 Bosch,Monroe,Altavoces,Accord,2021,36.19,184
 Denso,Denso,Discos de freno,Accord,2022,236.39,142
-Sachs,Valeo,Bujías,Camry,2022,496.18,106
-Brembo,Pioneer,Batería,X5,2019,157.92,138
+Sachs,Valeo,Bujï¿½as,Camry,2022,496.18,106
+Brembo,Pioneer,Baterï¿½a,X5,2019,157.92,138
 NGK,Monroe,Filtros de aceite,Civic,2020,404.44,136
 Sachs,NGK,Altavoces,Model 3,2018,152.04,123
 Monroe,Pioneer,Embrague,Corolla,2020,347.77,99
@@ -680,8 +680,8 @@ Valeo,Denso,Limpiaparabrisas,X5,2022,490.89,137
 Bosch,Valeo,Limpiaparabrisas,Mustang,2018,114.46,42
 Mann,Denso,Discos de freno,Accord,2023,304.04,2
 Sachs,Mann,Altavoces,Civic,2019,117.12,137
-Hella,Hella,Batería,Civic,2023,5.8,81
-NGK,Denso,Batería,Civic,2020,32.65,135
+Hella,Hella,Baterï¿½a,Civic,2023,5.8,81
+NGK,Denso,Baterï¿½a,Civic,2020,32.65,135
 Bosch,NGK,Discos de freno,Accord,2022,493.44,9
 NGK,NGK,Altavoces,Camry,2019,110.4,125
 Brembo,Mann,Limpiaparabrisas,Corolla,2018,164.52,7
@@ -695,10 +695,10 @@ Valeo,Valeo,Discos de freno,Mustang,2023,67.89,129
 Hella,Hella,Altavoces,X5,2018,265.75,12
 Monroe,Bosch,Limpiaparabrisas,Corolla,2022,473.2,157
 Mann,Pioneer,Faros,X5,2018,246.72,165
-Pioneer,Sachs,Batería,A4,2019,247.32,170
+Pioneer,Sachs,Baterï¿½a,A4,2019,247.32,170
 Bosch,Brembo,Embrague,Model 3,2019,101.05,166
 Monroe,Bosch,Faros,Accord,2021,60.92,16
-Denso,Brembo,Bujías,X5,2021,459.79,137
+Denso,Brembo,Bujï¿½as,X5,2021,459.79,137
 NGK,Sachs,Discos de freno,Model S,2020,218.83,57
 Monroe,Valeo,Limpiaparabrisas,Civic,2021,401.56,122
 Sachs,Brembo,Embrague,Model S,2022,317.87,145
@@ -712,12 +712,12 @@ Mann,Denso,Embrague,Model S,2019,207.81,52
 Valeo,NGK,Faros,Accord,2018,455.15,178
 Monroe,NGK,Embrague,X5,2021,31.03,67
 Brembo,Valeo,Amortiguadores,Mustang,2023,155.71,7
-Mann,Denso,Bujías,Accord,2020,138.12,74
-Pioneer,Monroe,Bujías,Model S,2018,360.37,119
+Mann,Denso,Bujï¿½as,Accord,2020,138.12,74
+Pioneer,Monroe,Bujï¿½as,Model S,2018,360.37,119
 Valeo,Brembo,Faros,Mustang,2022,188.18,69
-Pioneer,Denso,Bujías,Civic,2018,105.15,44
+Pioneer,Denso,Bujï¿½as,Civic,2018,105.15,44
 Hella,Brembo,Faros,Camry,2021,374.73,95
-Mann,Pioneer,Bujías,Mustang,2022,194.68,43
+Mann,Pioneer,Bujï¿½as,Mustang,2022,194.68,43
 Sachs,Denso,Limpiaparabrisas,Model S,2021,253.47,22
 Pioneer,Denso,Filtros de aceite,A4,2020,48.53,53
 NGK,Hella,Discos de freno,Mustang,2018,352.82,113
@@ -725,18 +725,18 @@ Pioneer,NGK,Filtros de aire,Camry,2019,427.25,44
 Monroe,Pioneer,Embrague,Model 3,2019,445.37,186
 Brembo,Monroe,Limpiaparabrisas,X5,2018,100.54,82
 Mann,Pioneer,Amortiguadores,Model 3,2023,491.47,119
-Brembo,Brembo,Bujías,Corolla,2022,312.52,193
+Brembo,Brembo,Bujï¿½as,Corolla,2022,312.52,193
 Monroe,Bosch,Filtros de aceite,Civic,2023,386.87,100
 NGK,Valeo,Faros,Corolla,2022,43.74,56
-Sachs,Monroe,Batería,Accord,2021,295.61,137
+Sachs,Monroe,Baterï¿½a,Accord,2021,295.61,137
 Mann,Hella,Discos de freno,Model 3,2023,141.26,166
 Brembo,NGK,Limpiaparabrisas,Model S,2019,245.15,112
 Mann,Mann,Filtros de aceite,Accord,2018,379.68,192
 Bosch,Denso,Filtros de aire,X5,2019,26.75,155
-Sachs,Hella,Batería,Accord,2023,259.48,110
+Sachs,Hella,Baterï¿½a,Accord,2023,259.48,110
 Sachs,Bosch,Amortiguadores,Civic,2022,492.84,195
 Hella,Mann,Filtros de aire,Camry,2021,19.4,120
-Bosch,Monroe,Batería,X5,2021,121.09,45
+Bosch,Monroe,Baterï¿½a,X5,2021,121.09,45
 Mann,Monroe,Faros,X5,2018,444.65,100
 Mann,Mann,Filtros de aire,Corolla,2018,125.32,160
 Bosch,Bosch,Filtros de aire,A4,2018,498.18,86
@@ -748,21 +748,21 @@ Bosch,Sachs,Embrague,Accord,2022,134.59,175
 Denso,Valeo,Filtros de aire,Model 3,2018,345.53,37
 Denso,Hella,Filtros de aceite,Accord,2021,452.99,26
 Sachs,NGK,Embrague,Model 3,2021,464.45,74
-Hella,Bosch,Bujías,Accord,2022,224.93,76
+Hella,Bosch,Bujï¿½as,Accord,2022,224.93,76
 Mann,Hella,Amortiguadores,Model S,2018,442.8,72
-Denso,Bosch,Batería,A4,2023,347.55,113
+Denso,Bosch,Baterï¿½a,A4,2023,347.55,113
 Monroe,Brembo,Discos de freno,A4,2018,152.88,28
-Denso,Denso,Bujías,Civic,2022,155.65,38
+Denso,Denso,Bujï¿½as,Civic,2022,155.65,38
 Pioneer,Monroe,Amortiguadores,A4,2019,249.72,109
 Hella,Pioneer,Discos de freno,Camry,2019,341.59,182
 Mann,Bosch,Embrague,Mustang,2023,132.98,151
-Sachs,Valeo,Bujías,Corolla,2020,50.32,17
+Sachs,Valeo,Bujï¿½as,Corolla,2020,50.32,17
 Denso,Bosch,Altavoces,Civic,2019,419.89,72
 Mann,Brembo,Faros,Model S,2023,109.7,147
-Sachs,Pioneer,Bujías,Accord,2021,209.76,112
+Sachs,Pioneer,Bujï¿½as,Accord,2021,209.76,112
 Sachs,Bosch,Filtros de aire,Civic,2022,245.2,198
 Bosch,Valeo,Discos de freno,Corolla,2022,297.8,30
-Monroe,Sachs,Batería,Corolla,2018,153.26,63
+Monroe,Sachs,Baterï¿½a,Corolla,2018,153.26,63
 Monroe,Bosch,Altavoces,Model 3,2020,56.83,80
 Pioneer,Valeo,Limpiaparabrisas,Corolla,2022,456.97,196
 Valeo,Mann,Faros,Camry,2021,41.87,185
@@ -777,10 +777,10 @@ Denso,Hella,Filtros de aire,Model S,2022,10.39,198
 Mann,Denso,Filtros de aceite,Camry,2022,348.94,10
 Brembo,Brembo,Altavoces,Civic,2023,428.15,143
 Sachs,NGK,Discos de freno,A4,2021,221.53,37
-Sachs,Bosch,Bujías,Model S,2020,114.48,82
+Sachs,Bosch,Bujï¿½as,Model S,2020,114.48,82
 NGK,Denso,Embrague,Civic,2021,219.41,120
 Valeo,NGK,Filtros de aire,Camry,2020,215.54,120
-Hella,Brembo,Bujías,Model 3,2019,103.58,83
+Hella,Brembo,Bujï¿½as,Model 3,2019,103.58,83
 Monroe,Pioneer,Filtros de aceite,A4,2018,180.94,90
 Brembo,Valeo,Filtros de aceite,A4,2022,11.56,144
 Bosch,Hella,Altavoces,Corolla,2019,364.91,53
@@ -789,43 +789,43 @@ Valeo,Sachs,Amortiguadores,X5,2021,154.71,138
 Bosch,Pioneer,Filtros de aire,Accord,2022,211.66,82
 Denso,Bosch,Discos de freno,Mustang,2019,430.18,177
 Mann,Bosch,Altavoces,A4,2023,391.99,176
-Monroe,Hella,Batería,Camry,2018,362.36,78
+Monroe,Hella,Baterï¿½a,Camry,2018,362.36,78
 Valeo,Sachs,Embrague,Model S,2019,13.35,181
-Denso,Hella,Batería,Mustang,2018,130.61,130
-Hella,Valeo,Batería,Model 3,2023,308.89,145
+Denso,Hella,Baterï¿½a,Mustang,2018,130.61,130
+Hella,Valeo,Baterï¿½a,Model 3,2023,308.89,145
 Valeo,Mann,Discos de freno,Model S,2023,26.29,26
 Sachs,Hella,Filtros de aceite,Accord,2021,308.82,148
-NGK,NGK,Batería,Civic,2021,467.6,18
+NGK,NGK,Baterï¿½a,Civic,2021,467.6,18
 NGK,Monroe,Altavoces,Corolla,2018,28.66,196
-Denso,Hella,Bujías,X5,2021,335.85,184
-NGK,NGK,Bujías,Mustang,2020,318.68,105
+Denso,Hella,Bujï¿½as,X5,2021,335.85,184
+NGK,NGK,Bujï¿½as,Mustang,2020,318.68,105
 Hella,Monroe,Embrague,Camry,2020,263.48,189
 Bosch,Pioneer,Altavoces,A4,2023,402.02,160
-Pioneer,Bosch,Batería,Model 3,2021,121.06,172
+Pioneer,Bosch,Baterï¿½a,Model 3,2021,121.06,172
 Sachs,Hella,Amortiguadores,A4,2022,16.14,7
 Hella,Monroe,Limpiaparabrisas,Mustang,2020,311.27,44
 Sachs,Hella,Altavoces,Mustang,2022,428.61,108
 Pioneer,NGK,Altavoces,Model S,2019,231.5,145
 Monroe,Bosch,Embrague,Camry,2018,278.32,163
-Hella,Denso,Batería,Corolla,2020,102.73,159
+Hella,Denso,Baterï¿½a,Corolla,2020,102.73,159
 Denso,Brembo,Discos de freno,X5,2018,29.03,99
-Hella,Mann,Batería,Model S,2022,194.24,29
-Hella,Mann,Batería,Model S,2020,153.25,65
+Hella,Mann,Baterï¿½a,Model S,2022,194.24,29
+Hella,Mann,Baterï¿½a,Model S,2020,153.25,65
 Pioneer,Sachs,Faros,X5,2019,96.71,197
 Denso,Mann,Amortiguadores,Civic,2021,177.35,93
 Mann,Valeo,Altavoces,Mustang,2023,65.9,195
-Bosch,NGK,Bujías,Corolla,2022,383.14,79
+Bosch,NGK,Bujï¿½as,Corolla,2022,383.14,79
 Sachs,Brembo,Filtros de aire,Camry,2023,296.85,63
 Pioneer,Denso,Embrague,Camry,2022,341.14,178
 Pioneer,Pioneer,Filtros de aire,Model S,2019,130.28,71
 Valeo,Hella,Amortiguadores,X5,2020,212.05,104
 NGK,Valeo,Discos de freno,Model 3,2019,234.79,5
 Monroe,Bosch,Altavoces,A4,2022,461.56,59
-Valeo,Pioneer,Batería,Mustang,2022,248.59,131
+Valeo,Pioneer,Baterï¿½a,Mustang,2022,248.59,131
 Sachs,Bosch,Amortiguadores,Model 3,2019,404.93,150
 Brembo,Denso,Filtros de aire,Camry,2021,327.34,190
 Pioneer,Denso,Embrague,Camry,2018,387.43,124
-Hella,Brembo,Bujías,Model S,2019,140.34,35
+Hella,Brembo,Bujï¿½as,Model S,2019,140.34,35
 Valeo,Valeo,Limpiaparabrisas,Mustang,2023,33.4,149
 Denso,Denso,Embrague,Accord,2019,56.65,121
 Sachs,NGK,Faros,Accord,2022,422.62,137
@@ -844,8 +844,8 @@ Brembo,Monroe,Filtros de aceite,A4,2018,251.33,167
 NGK,Sachs,Amortiguadores,Accord,2022,283.49,58
 Hella,Pioneer,Altavoces,Model S,2022,418.22,7
 Pioneer,NGK,Filtros de aire,X5,2022,111.51,129
-Monroe,Sachs,Batería,Civic,2021,228.05,46
-Bosch,Mann,Batería,X5,2018,204.37,50
+Monroe,Sachs,Baterï¿½a,Civic,2021,228.05,46
+Bosch,Mann,Baterï¿½a,X5,2018,204.37,50
 Sachs,Valeo,Faros,A4,2018,71.97,139
 NGK,Brembo,Faros,Model 3,2023,160.16,37
 Monroe,Bosch,Altavoces,Civic,2018,239.27,107
@@ -855,17 +855,17 @@ Denso,Brembo,Embrague,Civic,2018,392.23,54
 Brembo,Hella,Amortiguadores,Model 3,2019,358.32,160
 Pioneer,Pioneer,Filtros de aire,Camry,2018,491.65,68
 Denso,Pioneer,Filtros de aire,Camry,2020,294.71,32
-Bosch,Mann,Bujías,A4,2019,144.35,164
-Denso,Hella,Bujías,Camry,2021,102.42,145
+Bosch,Mann,Bujï¿½as,A4,2019,144.35,164
+Denso,Hella,Bujï¿½as,Camry,2021,102.42,145
 Hella,Valeo,Filtros de aire,Accord,2018,336.41,61
-Bosch,Pioneer,Batería,Camry,2023,162.87,25
+Bosch,Pioneer,Baterï¿½a,Camry,2023,162.87,25
 Bosch,Monroe,Filtros de aire,Accord,2022,94.41,194
-NGK,Hella,Batería,Mustang,2018,104.48,50
+NGK,Hella,Baterï¿½a,Mustang,2018,104.48,50
 Monroe,Monroe,Altavoces,Model 3,2020,329.21,54
-Sachs,Brembo,Bujías,Model 3,2022,360.37,79
-Hella,Sachs,Bujías,Civic,2018,195.27,130
+Sachs,Brembo,Bujï¿½as,Model 3,2022,360.37,79
+Hella,Sachs,Bujï¿½as,Civic,2018,195.27,130
 NGK,Mann,Embrague,Accord,2020,335.99,171
-Monroe,NGK,Batería,Model 3,2018,195.27,16
+Monroe,NGK,Baterï¿½a,Model 3,2018,195.27,16
 Hella,Valeo,Filtros de aire,Corolla,2022,135.45,112
 Mann,Valeo,Limpiaparabrisas,Civic,2023,243.41,128
 NGK,Brembo,Discos de freno,Accord,2020,115.32,5
@@ -876,7 +876,7 @@ NGK,NGK,Discos de freno,A4,2020,99.51,3
 Hella,Brembo,Faros,Model 3,2023,454.56,1
 Monroe,Brembo,Faros,Model 3,2021,87.08,26
 Sachs,Bosch,Faros,Model S,2022,115.34,75
-Denso,Pioneer,Bujías,Model 3,2021,176.13,109
+Denso,Pioneer,Bujï¿½as,Model 3,2021,176.13,109
 Brembo,Brembo,Discos de freno,Civic,2019,401.4,66
 Mann,Valeo,Faros,A4,2023,168.2,155
 Bosch,Sachs,Filtros de aceite,Model 3,2022,285.31,121
@@ -884,37 +884,37 @@ Denso,Mann,Faros,Corolla,2022,16.13,120
 Sachs,Monroe,Faros,A4,2018,366.07,89
 Valeo,Hella,Faros,Corolla,2022,134.9,147
 Monroe,Sachs,Discos de freno,Civic,2023,357.62,59
-Pioneer,NGK,Batería,A4,2021,334.73,116
+Pioneer,NGK,Baterï¿½a,A4,2021,334.73,116
 Sachs,Mann,Embrague,Mustang,2023,56.65,152
 Mann,Hella,Discos de freno,Mustang,2021,264.25,184
-Denso,Sachs,Bujías,Mustang,2018,147.51,106
+Denso,Sachs,Bujï¿½as,Mustang,2018,147.51,106
 Pioneer,Valeo,Limpiaparabrisas,Civic,2021,296.27,54
-NGK,Mann,Batería,Corolla,2020,155.32,74
+NGK,Mann,Baterï¿½a,Corolla,2020,155.32,74
 Valeo,Pioneer,Filtros de aire,Civic,2020,280.78,1
 Mann,Mann,Filtros de aceite,Civic,2021,94.09,30
 Denso,Brembo,Faros,Civic,2020,186.33,77
 Mann,Valeo,Embrague,Model 3,2019,146.82,152
 Mann,Valeo,Altavoces,X5,2018,64.29,81
 Hella,NGK,Faros,A4,2020,193.72,36
-Hella,Valeo,Bujías,Mustang,2018,345.43,104
+Hella,Valeo,Bujï¿½as,Mustang,2018,345.43,104
 Hella,Sachs,Filtros de aire,Camry,2023,352.53,57
 Denso,Brembo,Filtros de aceite,Model 3,2018,251.88,12
 Sachs,Monroe,Filtros de aceite,Mustang,2022,333.94,66
-Denso,NGK,Batería,Model 3,2022,380.31,150
+Denso,NGK,Baterï¿½a,Model 3,2022,380.31,150
 Hella,Monroe,Embrague,X5,2023,31.35,162
 Valeo,Pioneer,Embrague,Camry,2021,338.47,3
-Mann,Valeo,Batería,Model 3,2020,266.83,97
-Mann,NGK,Bujías,Civic,2023,474.74,55
+Mann,Valeo,Baterï¿½a,Model 3,2020,266.83,97
+Mann,NGK,Bujï¿½as,Civic,2023,474.74,55
 Mann,Valeo,Filtros de aceite,Civic,2023,377.16,117
 Valeo,NGK,Discos de freno,X5,2023,207.42,122
 Mann,Sachs,Discos de freno,Camry,2023,498.38,43
 Bosch,Valeo,Limpiaparabrisas,Model S,2021,127.57,189
 Pioneer,Brembo,Embrague,X5,2021,101.05,93
-Pioneer,Denso,Batería,X5,2022,464.69,31
+Pioneer,Denso,Baterï¿½a,X5,2022,464.69,31
 Hella,Valeo,Faros,Civic,2023,99.26,189
 Denso,Brembo,Filtros de aceite,X5,2021,357.91,28
 NGK,Pioneer,Limpiaparabrisas,Model 3,2021,450.08,35
-Mann,NGK,Bujías,Mustang,2021,30.01,168
+Mann,NGK,Bujï¿½as,Mustang,2021,30.01,168
 Denso,NGK,Filtros de aceite,A4,2019,220.37,62
 NGK,NGK,Discos de freno,Model S,2023,478.08,144
 Mann,Monroe,Filtros de aceite,A4,2018,425.29,194
@@ -934,24 +934,24 @@ Monroe,Hella,Embrague,Civic,2019,485.85,111
 Mann,Sachs,Embrague,Model S,2019,486.64,144
 Monroe,Bosch,Faros,A4,2018,395.68,23
 NGK,Hella,Faros,Accord,2023,462.3,39
-Mann,Mann,Batería,Model S,2020,70.87,4
+Mann,Mann,Baterï¿½a,Model S,2020,70.87,4
 Sachs,Hella,Discos de freno,Civic,2021,155.33,178
 Valeo,Hella,Limpiaparabrisas,Accord,2020,288.6,109
 Mann,Monroe,Faros,Model 3,2019,393.56,69
 Mann,Brembo,Embrague,Mustang,2022,121.4,181
 Denso,Mann,Filtros de aire,Corolla,2019,380.46,146
-Pioneer,Mann,Bujías,Model S,2021,438.79,95
+Pioneer,Mann,Bujï¿½as,Model S,2021,438.79,95
 NGK,NGK,Altavoces,X5,2023,127.69,35
 Brembo,Mann,Filtros de aire,Mustang,2022,414.52,177
 Sachs,NGK,Embrague,X5,2020,163.51,162
-Denso,Valeo,Bujías,A4,2021,311.15,75
+Denso,Valeo,Bujï¿½as,A4,2021,311.15,75
 Valeo,Pioneer,Amortiguadores,Model 3,2023,265.14,182
 Monroe,Pioneer,Altavoces,Model S,2019,279.01,130
 Brembo,Brembo,Faros,Model S,2019,226.86,170
 Hella,Sachs,Filtros de aceite,X5,2019,325.22,111
 Sachs,Monroe,Altavoces,Civic,2018,46.28,172
 Monroe,Sachs,Altavoces,A4,2020,303.13,82
-Bosch,Denso,Batería,Camry,2021,61.44,67
+Bosch,Denso,Baterï¿½a,Camry,2021,61.44,67
 Hella,Denso,Embrague,Model 3,2021,105.98,144
 Monroe,Denso,Embrague,Corolla,2021,181.69,165
 Pioneer,Hella,Filtros de aceite,Model 3,2022,22.17,29
@@ -959,15 +959,15 @@ Monroe,Brembo,Filtros de aceite,Civic,2018,358.55,16
 Monroe,Brembo,Filtros de aceite,Accord,2022,14.07,193
 Pioneer,Brembo,Filtros de aceite,A4,2018,36.34,83
 NGK,Pioneer,Amortiguadores,X5,2023,170.5,19
-Denso,Monroe,Bujías,A4,2023,23.92,77
+Denso,Monroe,Bujï¿½as,A4,2023,23.92,77
 Bosch,NGK,Embrague,Model 3,2020,423.09,160
-Denso,Denso,Bujías,Model 3,2022,174.61,129
+Denso,Denso,Bujï¿½as,Model 3,2022,174.61,129
 Denso,Bosch,Faros,Model S,2021,431.05,66
 Brembo,NGK,Amortiguadores,Model 3,2021,479.8,65
 Sachs,Denso,Altavoces,Civic,2020,139.02,54
 NGK,Valeo,Filtros de aire,Accord,2020,367.76,121
 Monroe,Denso,Faros,Model S,2021,409.22,98
-NGK,Bosch,Bujías,Corolla,2022,133.26,121
+NGK,Bosch,Bujï¿½as,Corolla,2022,133.26,121
 NGK,Monroe,Filtros de aire,Civic,2021,278.03,5
 Brembo,Denso,Altavoces,Corolla,2021,372.03,13
 Monroe,Monroe,Amortiguadores,Corolla,2022,438.7,172
@@ -981,7 +981,7 @@ Valeo,Pioneer,Faros,Civic,2022,48.36,131
 Bosch,NGK,Filtros de aceite,Model 3,2022,309.24,145
 Bosch,Brembo,Filtros de aire,Accord,2018,423.02,107
 Sachs,Pioneer,Filtros de aceite,A4,2021,408.29,173
-Monroe,Bosch,Bujías,Corolla,2022,345.84,195
+Monroe,Bosch,Bujï¿½as,Corolla,2022,345.84,195
 Pioneer,Bosch,Filtros de aire,X5,2021,49.77,70
 Brembo,Brembo,Filtros de aceite,Camry,2023,467.29,4
 Denso,Pioneer,Discos de freno,X5,2022,183.91,153
@@ -995,7 +995,7 @@ Denso,Bosch,Filtros de aire,Model S,2019,311.93,22
 Brembo,Valeo,Embrague,Civic,2020,319.63,109
 NGK,Brembo,Embrague,Corolla,2018,451.38,56
 Sachs,Hella,Filtros de aceite,Accord,2020,55.22,117
-Mann,Brembo,Batería,Model S,2018,253.53,42
+Mann,Brembo,Baterï¿½a,Model S,2018,253.53,42
 Denso,Monroe,Filtros de aceite,A4,2022,273.23,148
 NGK,Sachs,Limpiaparabrisas,A4,2019,269.52,62
-Mann,Pioneer,Batería,Accord,2020,411.59,86
+Mann,Pioneer,Baterï¿½a,Accord,2020,411.59,86
