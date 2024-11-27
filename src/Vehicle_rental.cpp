@@ -2,13 +2,11 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <vector>
 #include <functional>
 #include <algorithm>
 
 using namespace std;
 
-// Estructuras para almacenar los datos
 struct Vehiculo {
     string modelo, marca, placa, color, motor, ced_cliente, fecha_de_entrega;
     int año, kilometraje, rentado;
@@ -26,7 +24,6 @@ struct Repuesto {
     double precio;
 };
 
-// Funciones para parsear cada tipo de estructura
 Vehiculo parseVehiculo(const string& linea) {
     Vehiculo v;
     stringstream ss(linea);
@@ -79,7 +76,6 @@ Repuesto parseRepuesto(const string& linea) {
     return r;
 }
 
-// Función para convertir cada estructura a una línea CSV
 string vehiculoToCSV(const Vehiculo& v) {
     stringstream ss;
     ss << v.modelo << "," << v.marca << "," << v.placa << "," << v.color << "," << v.año << "," << v.kilometraje << "," << v.rentado << "," << v.motor << "," << v.precio_renta << "," << v.ced_cliente << "," << v.fecha_de_entrega;
@@ -98,41 +94,45 @@ string repuestoToCSV(const Repuesto& r) {
     return ss.str();
 }
 
-// Función para leer un archivo CSV y almacenar los datos en un vector de estructuras
 template<typename T>
-vector<T> leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&)) {
-    vector<T> datos;
+T* leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&), int& cantidad) {
     ifstream archivo("bin/" + nombreArchivo);
     string linea;
+    cantidad = 0;
 
     if (archivo.is_open()) {
-        // Leer la primera línea (cabecera)
-        getline(archivo, linea);
+        getline(archivo, linea); 
 
-        // Leer cada línea del archivo
         while (getline(archivo, linea)) {
-            datos.push_back(parseFunc(linea));
+            cantidad++;
+        }
+
+        archivo.clear();
+        archivo.seekg(0, ios::beg);
+        getline(archivo, linea); 
+
+        T* datos = new T[cantidad];
+        int index = 0;
+        while (getline(archivo, linea)) {
+            datos[index++] = parseFunc(linea);
         }
         archivo.close();
+        return datos;
     } else {
         cerr << "No se pudo abrir el archivo: " << nombreArchivo << endl;
+        return nullptr;
     }
-
-    return datos;
 }
 
-// Función para escribir los datos en un archivo CSV
 template<typename T>
-void escribirCSV(const string& nombreArchivo, const vector<T>& datos, string (*toCSV)(const T&)) {
+void escribirCSV(const string& nombreArchivo, T* datos, int cantidad, string (*toCSV)(const T&)) {
     ofstream archivo("bin/" + nombreArchivo);
 
     if (archivo.is_open()) {
-        // Escribir la cabecera
         archivo << "modelo,marca,placa,color,año,kilometraje,rentado,motor,precio_renta,ced_cliente,fecha_de_entrega" << endl;
 
-        // Escribir cada dato
-        for (const auto& dato : datos) {
-            archivo << toCSV(dato) << endl;
+        for (int i = 0; i < cantidad; ++i) {
+            archivo << toCSV(datos[i]) << endl;
         }
         archivo.close();
     } else {
@@ -140,35 +140,48 @@ void escribirCSV(const string& nombreArchivo, const vector<T>& datos, string (*t
     }
 }
 
-// Función para borrar un registro de un vector
 template<typename T>
-void borrarRegistro(vector<T>& datos, function<bool(const T&)> criterio) {
-    datos.erase(remove_if(datos.begin(), datos.end(), criterio), datos.end());
+void borrarRegistro(T*& datos, int& cantidad, function<bool(const T&)> criterio) {
+    T* nuevosDatos = new T[cantidad];
+    int nuevoCantidad = 0;
+
+    for (int i = 0; i < cantidad; ++i) {
+        if (!criterio(datos[i])) {
+            nuevosDatos[nuevoCantidad++] = datos[i];
+        }
+    }
+
+    delete[] datos;
+    datos = nuevosDatos;
+    cantidad = nuevoCantidad;
 }
 
-// Función para actualizar un registro en un vector
 template<typename T>
-void actualizarRegistro(vector<T>& datos, function<bool(const T&)> criterio, function<void(T&)> actualizar) {
-    for (auto& dato : datos) {
-        if (criterio(dato)) {
-            actualizar(dato);
+void actualizarRegistro(T* datos, int cantidad, function<bool(const T&)> criterio, function<void(T&)> actualizar) {
+    for (int i = 0; i < cantidad; ++i) {
+        if (criterio(datos[i])) {
+            actualizar(datos[i]);
         }
     }
 }
 
-// Función para insertar un registro en un vector
 template<typename T>
-void insertarRegistro(vector<T>& datos, const T& nuevoDato) {
-    datos.push_back(nuevoDato);
+void insertarRegistro(T*& datos, int& cantidad, const T& nuevoDato) {
+    T* nuevosDatos = new T[cantidad + 1];
+    for (int i = 0; i < cantidad; ++i) {
+        nuevosDatos[i] = datos[i];
+    }
+    nuevosDatos[cantidad] = nuevoDato;
+    delete[] datos;
+    datos = nuevosDatos;
+    cantidad++;
 }
 
-// Función para mostrar un registro
 template<typename T>
 void mostrarRegistro(const T& dato, string (*toCSV)(const T&)) {
     cout << toCSV(dato) << endl;
 }
 
-// Función para mostrar el menú
 void mostrarMenu() {
     cout << "Seleccione una operación:" << endl;
     cout << "1. Leer archivos" << endl;
@@ -183,42 +196,40 @@ void mostrarMenu() {
 }
 
 int main() {
-    vector<Vehiculo> vehiculos = leerCSV("datos_vehiculos.csv", parseVehiculo);
-    vector<Cliente> clientes = leerCSV("datos_clientes.csv", parseCliente);
-    vector<Repuesto> repuestos = leerCSV("datos_repuestos.csv", parseRepuesto);
+    int cantidadVehiculos, cantidadClientes, cantidadRepuestos;
+    Vehiculo* vehiculos = leerCSV("datos_vehiculos.csv", parseVehiculo, cantidadVehiculos);
+    Cliente* clientes = leerCSV("datos_clientes.csv", parseCliente, cantidadClientes);
+    Repuesto* repuestos = leerCSV("datos_repuestos.csv", parseRepuesto, cantidadRepuestos);
 
     bool cambiosConfirmados = false;
     int opcion;
     do {
         mostrarMenu();
         cin >> opcion;
-        cin.ignore(); // Limpiar el buffer de entrada
+        cin.ignore();
 
         switch (opcion) {
             case 1:
-                // Leer y procesar los archivos CSV
-                for (const auto& v : vehiculos) {
-                    mostrarRegistro(v, vehiculoToCSV);
+                for (int i = 0; i < cantidadVehiculos; ++i) {
+                    mostrarRegistro(vehiculos[i], vehiculoToCSV);
                 }
-                for (const auto& c : clientes) {
-                    mostrarRegistro(c, clienteToCSV);
+                for (int i = 0; i < cantidadClientes; ++i) {
+                    mostrarRegistro(clientes[i], clienteToCSV);
                 }
-                for (const auto& r : repuestos) {
-                    mostrarRegistro(r, repuestoToCSV);
+                for (int i = 0; i < cantidadRepuestos; ++i) {
+                    mostrarRegistro(repuestos[i], repuestoToCSV);
                 }
                 break;
             case 2: {
-                // Borrar un registro
                 string placa;
                 cout << "Ingrese la placa del vehículo a borrar: ";
                 getline(cin, placa);
                 auto criterioBorrar = [placa](const Vehiculo& v) { return v.placa == placa; };
-                borrarRegistro(vehiculos, function<bool(const Vehiculo&)>(criterioBorrar));
+                borrarRegistro(vehiculos, cantidadVehiculos, function<bool(const Vehiculo&)>(criterioBorrar));
                 cambiosConfirmados = false;
                 break;
             }
             case 3: {
-                // Actualizar un registro
                 string placa;
                 cout << "Ingrese la placa del vehículo a actualizar: ";
                 getline(cin, placa);
@@ -227,12 +238,11 @@ int main() {
                     cout << "Ingrese el nuevo color: ";
                     getline(cin, v.color);
                 };
-                actualizarRegistro(vehiculos, function<bool(const Vehiculo&)>(criterioActualizar), function<void(Vehiculo&)>(actualizar));
+                actualizarRegistro(vehiculos, cantidadVehiculos, function<bool(const Vehiculo&)>(criterioActualizar), function<void(Vehiculo&)>(actualizar));
                 cambiosConfirmados = false;
                 break;
             }
             case 4: {
-                // Insertar un registro
                 Vehiculo nuevoVehiculo;
                 cout << "Ingrese los datos del nuevo vehículo:" << endl;
                 cout << "Modelo: "; getline(cin, nuevoVehiculo.modelo);
@@ -246,50 +256,52 @@ int main() {
                 cout << "Precio de renta: "; cin >> nuevoVehiculo.precio_renta; cin.ignore();
                 cout << "Cédula del cliente: "; getline(cin, nuevoVehiculo.ced_cliente);
                 cout << "Fecha de entrega: "; getline(cin, nuevoVehiculo.fecha_de_entrega);
-                insertarRegistro(vehiculos, nuevoVehiculo);
+                insertarRegistro(vehiculos, cantidadVehiculos, nuevoVehiculo);
                 cambiosConfirmados = false;
                 break;
             }
             case 5: {
-                // Consultar un registro
                 string placa;
                 cout << "Ingrese la placa del vehículo a consultar: ";
                 getline(cin, placa);
                 auto criterioConsultar = [placa](const Vehiculo& v) { return v.placa == placa; };
-                for (const auto& v : vehiculos) {
-                    if (criterioConsultar(v)) {
-                        mostrarRegistro(v, vehiculoToCSV);
+                for (int i = 0; i < cantidadVehiculos; ++i) {
+                    if (criterioConsultar(vehiculos[i])) {
+                        mostrarRegistro(vehiculos[i], vehiculoToCSV);
                     }
                 }
                 break;
             }
             case 6:
-                // Confirmar cambios
-                escribirCSV("datos_vehiculos.csv", vehiculos, vehiculoToCSV);
-                escribirCSV("datos_clientes.csv", clientes, clienteToCSV);
-                escribirCSV("datos_repuestos.csv", repuestos, repuestoToCSV);
+                escribirCSV("datos_vehiculos.csv", vehiculos, cantidadVehiculos, vehiculoToCSV);
+                escribirCSV("datos_clientes.csv", clientes, cantidadClientes, clienteToCSV);
+                escribirCSV("datos_repuestos.csv", repuestos, cantidadRepuestos, repuestoToCSV);
                 cout << "Cambios confirmados y guardados." << endl;
                 cambiosConfirmados = true;
                 break;
             case 7:
-                // Salir sin confirmar
                 cout << "Saliendo sin confirmar cambios." << endl;
                 cambiosConfirmados = false;
                 break;
             case 8:
-                // Salir del programa
                 if (!cambiosConfirmados) {
                     cout << "Tiene cambios sin confirmar. ¿Desea salir sin guardar? (s/n): ";
                     char respuesta;
                     cin >> respuesta;
                     if (respuesta == 's' || respuesta == 'S') {
                         cout << "Saliendo sin confirmar cambios." << endl;
+                        delete[] vehiculos;
+                        delete[] clientes;
+                        delete[] repuestos;
                         return 0;
                     } else {
-                        opcion = 0; // Para continuar en el bucle
+                        opcion = 0;
                     }
                 } else {
                     cout << "Saliendo del programa." << endl;
+                    delete[] vehiculos;
+                    delete[] clientes;
+                    delete[] repuestos;
                     return 0;
                 }
                 break;
