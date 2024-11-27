@@ -7,92 +7,95 @@
 
 using namespace std;
 
-struct Vehiculo {
+class Vehiculo {
+public:
     string modelo, marca, placa, color, motor, ced_cliente, fecha_de_entrega;
     int año, kilometraje, rentado;
     double precio_renta;
+
+    static Vehiculo parse(const string& linea) {
+        Vehiculo v;
+        stringstream ss(linea);
+        string campo;
+
+        getline(ss, v.modelo, ',');
+        getline(ss, v.marca, ',');
+        getline(ss, v.placa, ',');
+        getline(ss, v.color, ',');
+        ss >> v.año; ss.ignore();
+        ss >> v.kilometraje; ss.ignore();
+        ss >> v.rentado; ss.ignore();
+        getline(ss, v.motor, ',');
+        ss >> v.precio_renta; ss.ignore();
+        getline(ss, v.ced_cliente, ',');
+        getline(ss, v.fecha_de_entrega, ',');
+
+        return v;
+    }
+
+    string toCSV() const {
+        stringstream ss;
+        ss << modelo << "," << marca << "," << placa << "," << color << "," << año << "," << kilometraje << "," << rentado << "," << motor << "," << precio_renta << "," << ced_cliente << "," << fecha_de_entrega;
+        return ss.str();
+    }
 };
 
-struct Cliente {
+class Cliente {
+public:
     string cedula, nombre, apellido, email, direccion;
     int cantidad_vehiculos_rentados, activo;
+
+    static Cliente parse(const string& linea) {
+        Cliente c;
+        stringstream ss(linea);
+        string campo;
+
+        getline(ss, c.cedula, ',');
+        getline(ss, c.nombre, ',');
+        getline(ss, c.apellido, ',');
+        getline(ss, c.email, ',');
+        ss >> c.cantidad_vehiculos_rentados; ss.ignore();
+        getline(ss, c.direccion, ',');
+        ss >> c.activo;
+
+        return c;
+    }
+
+    string toCSV() const {
+        stringstream ss;
+        ss << cedula << "," << nombre << "," << apellido << "," << email << "," << cantidad_vehiculos_rentados << "," << direccion << "," << activo;
+        return ss.str();
+    }
 };
 
-struct Repuesto {
+class Repuesto {
+public:
     string modelo, marca, nombre, modelo_carro;
     int año_carro, existencias;
     double precio;
+
+    static Repuesto parse(const string& linea) {
+        Repuesto r;
+        stringstream ss(linea);
+        string campo;
+
+        getline(ss, r.modelo, ',');
+        getline(ss, r.marca, ',');
+        getline(ss, r.nombre, ',');
+        getline(ss, r.modelo_carro, ',');
+        ss >> r.año_carro; ss.ignore();
+        ss >> r.precio; ss.ignore();
+        ss >> r.existencias;
+
+        return r;
+    }
+
+    string toCSV() const {
+        stringstream ss;
+        ss << modelo << "," << marca << "," << nombre << "," << modelo_carro << "," << año_carro << "," << precio << "," << existencias;
+        return ss.str();
+    }
 };
-
-Vehiculo parseVehiculo(const string& linea) {
-    Vehiculo v;
-    stringstream ss(linea);
-    string campo;
-
-    getline(ss, v.modelo, ',');
-    getline(ss, v.marca, ',');
-    getline(ss, v.placa, ',');
-    getline(ss, v.color, ',');
-    ss >> v.año; ss.ignore();
-    ss >> v.kilometraje; ss.ignore();
-    ss >> v.rentado; ss.ignore();
-    getline(ss, v.motor, ',');
-    ss >> v.precio_renta; ss.ignore();
-    getline(ss, v.ced_cliente, ',');
-    getline(ss, v.fecha_de_entrega, ',');
-
-    return v;
-}
-
-Cliente parseCliente(const string& linea) {
-    Cliente c;
-    stringstream ss(linea);
-    string campo;
-
-    getline(ss, c.cedula, ',');
-    getline(ss, c.nombre, ',');
-    getline(ss, c.apellido, ',');
-    getline(ss, c.email, ',');
-    ss >> c.cantidad_vehiculos_rentados; ss.ignore();
-    getline(ss, c.direccion, ',');
-    ss >> c.activo;
-
-    return c;
-}
-
-Repuesto parseRepuesto(const string& linea) {
-    Repuesto r;
-    stringstream ss(linea);
-    string campo;
-
-    getline(ss, r.modelo, ',');
-    getline(ss, r.marca, ',');
-    getline(ss, r.nombre, ',');
-    getline(ss, r.modelo_carro, ',');
-    ss >> r.año_carro; ss.ignore();
-    ss >> r.precio; ss.ignore();
-    ss >> r.existencias;
-
-    return r;
-}
-
-string vehiculoToCSV(const Vehiculo& v) {
-    stringstream ss;
-    ss << v.modelo << "," << v.marca << "," << v.placa << "," << v.color << "," << v.año << "," << v.kilometraje << "," << v.rentado << "," << v.motor << "," << v.precio_renta << "," << v.ced_cliente << "," << v.fecha_de_entrega;
-    return ss.str();
-}
-
-string clienteToCSV(const Cliente& c) {
-    stringstream ss;
-    ss << c.cedula << "," << c.nombre << "," << c.apellido << "," << c.email << "," << c.cantidad_vehiculos_rentados << "," << c.direccion << "," << c.activo;
-    return ss.str();
-}
-
-string repuestoToCSV(const Repuesto& r) {
-    stringstream ss;
-    ss << r.modelo << "," << r.marca << "," << r.nombre << "," << r.modelo_carro << "," << r.año_carro << "," << r.precio << "," << r.existencias;
-    return ss.str();
-}
 
 template<typename T>
 T* leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&), int& cantidad) {
@@ -101,7 +104,7 @@ T* leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&), int& cant
     cantidad = 0;
 
     if (archivo.is_open()) {
-        getline(archivo, linea); 
+        getline(archivo, linea);
 
         while (getline(archivo, linea)) {
             cantidad++;
@@ -109,7 +112,7 @@ T* leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&), int& cant
 
         archivo.clear();
         archivo.seekg(0, ios::beg);
-        getline(archivo, linea); 
+        getline(archivo, linea);
 
         T* datos = new T[cantidad];
         int index = 0;
@@ -125,14 +128,14 @@ T* leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&), int& cant
 }
 
 template<typename T>
-void escribirCSV(const string& nombreArchivo, T* datos, int cantidad, string (*toCSV)(const T&)) {
+void escribirCSV(const string& nombreArchivo, T* datos, int cantidad, string (T::*toCSV)() const) {
     ofstream archivo("bin/" + nombreArchivo);
 
     if (archivo.is_open()) {
         archivo << "modelo,marca,placa,color,año,kilometraje,rentado,motor,precio_renta,ced_cliente,fecha_de_entrega" << endl;
 
         for (int i = 0; i < cantidad; ++i) {
-            archivo << toCSV(datos[i]) << endl;
+            archivo << (datos[i].*toCSV)() << endl;
         }
         archivo.close();
     } else {
@@ -178,8 +181,8 @@ void insertarRegistro(T*& datos, int& cantidad, const T& nuevoDato) {
 }
 
 template<typename T>
-void mostrarRegistro(const T& dato, string (*toCSV)(const T&)) {
-    cout << toCSV(dato) << endl;
+void mostrarRegistro(const T& dato, string (T::*toCSV)() const) {
+    cout << (dato.*toCSV)() << endl;
 }
 
 void mostrarMenu() {
@@ -197,9 +200,9 @@ void mostrarMenu() {
 
 int main() {
     int cantidadVehiculos, cantidadClientes, cantidadRepuestos;
-    Vehiculo* vehiculos = leerCSV("datos_vehiculos.csv", parseVehiculo, cantidadVehiculos);
-    Cliente* clientes = leerCSV("datos_clientes.csv", parseCliente, cantidadClientes);
-    Repuesto* repuestos = leerCSV("datos_repuestos.csv", parseRepuesto, cantidadRepuestos);
+    Vehiculo* vehiculos = leerCSV("datos_vehiculos.csv", Vehiculo::parse, cantidadVehiculos);
+    Cliente* clientes = leerCSV("datos_clientes.csv", Cliente::parse, cantidadClientes);
+    Repuesto* repuestos = leerCSV("datos_repuestos.csv", Repuesto::parse, cantidadRepuestos);
 
     bool cambiosConfirmados = false;
     int opcion;
@@ -211,13 +214,13 @@ int main() {
         switch (opcion) {
             case 1:
                 for (int i = 0; i < cantidadVehiculos; ++i) {
-                    mostrarRegistro(vehiculos[i], vehiculoToCSV);
+                    mostrarRegistro(vehiculos[i], &Vehiculo::toCSV);
                 }
                 for (int i = 0; i < cantidadClientes; ++i) {
-                    mostrarRegistro(clientes[i], clienteToCSV);
+                    mostrarRegistro(clientes[i], &Cliente::toCSV);
                 }
                 for (int i = 0; i < cantidadRepuestos; ++i) {
-                    mostrarRegistro(repuestos[i], repuestoToCSV);
+                    mostrarRegistro(repuestos[i], &Repuesto::toCSV);
                 }
                 break;
             case 2: {
@@ -267,15 +270,15 @@ int main() {
                 auto criterioConsultar = [placa](const Vehiculo& v) { return v.placa == placa; };
                 for (int i = 0; i < cantidadVehiculos; ++i) {
                     if (criterioConsultar(vehiculos[i])) {
-                        mostrarRegistro(vehiculos[i], vehiculoToCSV);
+                        mostrarRegistro(vehiculos[i], &Vehiculo::toCSV);
                     }
                 }
                 break;
             }
             case 6:
-                escribirCSV("datos_vehiculos.csv", vehiculos, cantidadVehiculos, vehiculoToCSV);
-                escribirCSV("datos_clientes.csv", clientes, cantidadClientes, clienteToCSV);
-                escribirCSV("datos_repuestos.csv", repuestos, cantidadRepuestos, repuestoToCSV);
+                escribirCSV("datos_vehiculos.csv", vehiculos, cantidadVehiculos, &Vehiculo::toCSV);
+                escribirCSV("datos_clientes.csv", clientes, cantidadClientes, &Cliente::toCSV);
+                escribirCSV("datos_repuestos.csv", repuestos, cantidadRepuestos, &Repuesto::toCSV);
                 cout << "Cambios confirmados y guardados." << endl;
                 cambiosConfirmados = true;
                 break;
