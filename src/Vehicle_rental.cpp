@@ -148,6 +148,29 @@ bool verificarPermisos(Rol rol, const string& operacion) {
     return false;
 }
 
+template <typename T>
+void gestionarRegistros(const string& filename, Rol userRole) {
+    if (!verificarPermisos(userRole, filename)) {
+        cerr << "Acceso denegado para operar con " << filename << endl;
+        return;
+    }
+
+    ifstream inputFile("bin/" + filename);
+    if (!inputFile.is_open()) {
+        cerr << "Error al abrir el archivo " << filename << endl;
+        return;
+    }
+
+    string line;
+    while (getline(inputFile, line)) {
+        T registro;
+        registro.fromCSV(line);
+        registro.display();
+        cout << "-----------------------\n";
+    }
+
+    inputFile.close();
+}
 template<typename T>
 T* leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&), int& cantidad) {
     ifstream archivo("bin/" + nombreArchivo);
