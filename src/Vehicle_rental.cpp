@@ -128,6 +128,26 @@ public:
     }
 };
 
+enum Rol {
+    ADMIN,
+    MANAGER,
+    EMPLEADO
+};
+
+bool verificarPermisos(Rol rol, const string& operacion) {
+    if (rol == ADMIN) return true;
+
+    if (rol == MANAGER) {
+        return operacion == "vehiculos" || operacion == "clientes" || operacion == "repuestos";
+    }
+
+    if (rol == EMPLEADO) {
+        return operacion == "consultar";
+    }
+
+    return false;
+}
+
 template<typename T>
 T* leerCSV(const string& nombreArchivo, T (*parseFunc)(const string&), int& cantidad) {
     ifstream archivo("bin/" + nombreArchivo);
