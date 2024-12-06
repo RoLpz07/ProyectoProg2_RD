@@ -273,6 +273,50 @@ void mostrarMenu() {
 }
 
 int main() {
+
+    Rol userRole;
+    string userName, password;
+    cout << "Ingrese su nombre de usuario: ";
+    cin >> userName;
+    cout << "Ingrese su contraseña: ";
+    cin >> password;
+
+    if (userName == "admin") userRole = ADMIN;
+    else if (userName == "manager") userRole = MANAGER;
+    else userRole = EMPLEADO;
+
+    cout << "Bienvenido, " << userName << ". Su rol es: "
+         << (userRole == ADMIN ? "Administrador" : (userRole == MANAGER ? "Manager" : "Empleado"))
+         << endl;
+
+    int opcion;
+    do {
+        cout << "Seleccione una opción:\n1. Gestionar Vehículos\n2. Gestionar Clientes\n3. Gestionar Repuestos\n4. Salir\nOpción: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                gestionarRegistros<Vehiculo>("datos_vehiculos.csv", userRole);
+                break;
+            case 2:
+                gestionarRegistros<Cliente>("datos_clientes.csv", userRole);
+                break;
+            case 3:
+                gestionarRegistros<Repuesto>("datos_repuestos.csv", userRole);
+                break;
+            case 4:
+                cout << "Saliendo del programa..." << endl;
+                break;
+            default:
+                cerr << "Opción no válida." << endl;
+        }
+    } while (opcion != 4);
+
+    return 0;
+}
+
+int main () {
+   
     int cantidadVehiculos, cantidadClientes, cantidadRepuestos;
     Vehiculo* vehiculos = leerCSV("datos_vehiculos.csv", Vehiculo::parse, cantidadVehiculos);
     Cliente* clientes = leerCSV("datos_clientes.csv", Cliente::parse, cantidadClientes);
